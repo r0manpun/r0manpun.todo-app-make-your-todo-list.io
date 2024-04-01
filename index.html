@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App // create your list of todos</title>
+    <!-- Fa Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Connecting with stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- Connecting with JavaScript File -->
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <main class="todo--container">
+      <h1>TODO APP</h1>
+      <p>Create todo for your present and future.</p>
+      <ul class="list--container">
+        <form class="todo--form">
+          <input
+            type="text"
+            placeholder="write your todo"
+            class="todo--input"
+          />
+          <button class="form--btn btn">Add</button>
+        </form>
+        <!-- <li class="todo__list--container" data-id="111">
+          <input type="checkbox" class="checkbox" />
+          <span>Go Gym</span>
+          <button class="btn btn--edit">Edit</button>
+          <button class="btn btn--delete">Delete</button>
+        </li>
+        <li class="todo__list--container" data-id="222">
+          <input type="checkbox" class="checkbox" />
+          <span>Go Gym</span>
+          <button class="btn btn--edit">Edit</button>
+          <button class="btn btn--delete">Delete</button>
+        </li> -->
+      </ul>
+    </main>
+    <div class="modal hidden">
+      <i class="fa fa-close"></i>
+      <h1 class="edit">Edit Todo</h1>
+      <form class="form--modal">
+        <input type="text" placeholder="edit your todo" class="edit--value" />
+        <button class="save">Save</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
